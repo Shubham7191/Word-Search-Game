@@ -9,7 +9,6 @@
 
   <script type="text/javascript" src="./js/jquery.js"></script>
   <link rel="stylesheet" href="./css/style.css" />
-  <script type="text/javascript" src="./js/script.js"></script>
  
   <title>Game</title>
  </head>
@@ -18,9 +17,32 @@
 <div id="parentOfHeader">
 <header id= "header">
 
+
+
+
+
+
+<select class="Category" name="" id="Category1" onchange="playGame.updateLetterBoard()">
+    <option value="">Select</option>
+    <option value="Animal" id="Animal">Animal</option>
+    <option value="Fruits" id="Fruits">Fruits</option>
+    <option value="Courses" id="Courses">Courses</option>
+</select>
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="board">
-<div id="timerBoard" class="boardItems"></div>
-<div id="scoreBoard" class="boardItems"></div>
+	<div id="timerBoard" class="boardItems"></div>
+	<div id="scoreBoard" class="boardItems"></div>
 </div>
 
 </header>
@@ -35,8 +57,14 @@
 
 <div id="middle">
 
-<div id="alphabetBoard"></div>
-<div id="LetterBoard"></div>
+	<div id="alphabetBoard">
+		<div id="boxInMatrix" >
+			<table id="tableOfAlphabet"></table>
+
+		</div>
+	</div>
+	<div id="LetterBoard"></div>
+
 <div style="clear:both"></div>
 
 </div>
@@ -51,22 +79,20 @@
 
 
 
-
-
 </div>
 
 
 
 
 
-<!-- secong page -->
+<!------------------------------------- secong page-------------------------------------- -->
 
 
 <div class="Type">
 
     
 </div>
+  <script type="text/javascript" src="./js/script.js"></script>
 
  </body>
 </html>
-
